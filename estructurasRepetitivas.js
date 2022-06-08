@@ -37,6 +37,7 @@ function Cronometro(){
       if (s>0){
         --s
         console.log(`${h}:${m}:${s}`)
+        setInterval(()=>console.clear(),1000)
       }
       else{
         s=60
