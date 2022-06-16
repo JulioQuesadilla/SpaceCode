@@ -1,0 +1,9 @@
+// Ejercicio 1: Leer un valor entero y determinar si se trata de un número par o impar
+(function parOimpar (){
+  var x = Number(prompt("Dame un número "))
+while (Number.isInteger(x)===false){
+   var x = Number(prompt("¡Dame un número entero! "))
+}
+  y = x%2==0 ? x + " es par": x + " es impar"
+  console.log(y)
+})()

@@ -1,4 +1,4 @@
-// Ejercicio 1: Leer un valor entero y determinar si se trata de un número par o impar
+/* Ejercicio 3: menú */
 function parOimpar (){
   var x = Number(prompt("Dame un número "))
 while (Number.isInteger(x)===false){
@@ -7,27 +7,6 @@ while (Number.isInteger(x)===false){
   y = x%2==0 ? x + " es par": x + " es impar"
   console.log(y)
 }
-
-
-/* Ejercicio 2: leer un carácter (char) e indicar si es una vocal minúscula, una vocal mayúscula o no es una vocal.*/
-vocal= prompt("Teclee un caracter")
-
-switch(vocal.charCodeAt(0)){
-  case 65: case 69: case 73: case 79: case 85:
-    console.log(`El caracter ${vocal.charAt(0)} es una vocal mayúscula`)
-    break
-
-  case 97: case 101: case 105: case 111: case 117:
-    console.log(`El caracter ${vocal.charAt(0)} es una vocal minúscula`)
-    break
-
-  default:
-    console.log(`El caracter '${vocal.charAt(0)}' ni siquiera es una vocal`)
-    break
-}
-
-/* Ejercicio 3: menú */
-
 (function(){
   var usuario = prompt(`Ingrese su usuario `)
   console.log("Iniciando...")

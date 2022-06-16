@@ -1,0 +1,16 @@
+/* Ejercicio 2: leer un carácter (char) e indicar si es una vocal minúscula, una vocal mayúscula o no es una vocal.*/
+let vocal= prompt("Teclee un caracter")
+
+switch(vocal.charCodeAt(0)){
+  case 65: case 69: case 73: case 79: case 85:
+    console.log(`El caracter ${vocal.charAt(0)} es una vocal mayúscula`)
+    break
+
+  case 97: case 101: case 105: case 111: case 117:
+    console.log(`El caracter ${vocal.charAt(0)} es una vocal minúscula`)
+    break
+
+  default:
+    console.log(`El caracter '${vocal.charAt(0)}' ni siquiera es una vocal`)
+    break
+}
