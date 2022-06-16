@@ -1,0 +1,14 @@
+function Fibonacci(n){
+  if (n>=3){
+    return Fibonacci(n-1)+Fibonacci(n-2) 
+  } else{
+    return 1
+  }
+}
+let a= prompt("¿cuántos números Fibonacci desea ver?")
+
+for (let i=1;i<=a;i++){
+  console.log(Fibonacci(i))
+}
+
+
